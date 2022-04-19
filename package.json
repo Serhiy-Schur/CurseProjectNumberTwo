@@ -1,0 +1,27 @@
+{
+  "name": "db-curse-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "hbs": "^4.2.0",
+    "moment": "^2.29.2",
+    "mysql2": "^2.3.3"
+  },
+  "devDependencies": {
+    "express": "^4.17.3"
+  },
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Serhiy-Schur/CurseProjectNumberTwo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Serhiy-Schur/CurseProjectNumberTwoissues"
+  },
+  "homepage": "https://github.com/Serhiy-Schur/CurseProjectNumberTwo#readme"
+}

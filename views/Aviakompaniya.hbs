@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Авіакомпанія</title>
+    <meta charset="utf-8" />
+    <link href="/style_zapyt.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="navbar">
+    <div><a class="navbar__btn__back" href="/Stuard">Назад</a></div>
+</div>
+<h1>Авіакомпанія</h1>
+<div class="search">
+    <input class="search_input" type="text" name="content" placeholder="Контактний номер телефону">
+    <input class="search_input" type="text" name="content2" placeholder="Країна розташування офісу">
+    <input type="button" value="Знайти" onclick="search_generate_url('Aviakompaniya')">
+</div>
+<table>
+    <tr><th>Номер авіакомпанії</th><th>Країна розташування офісу</th><th>Дата заснування авіакомпанії</th><th>Контактний номер телефону</th><th>Назва авіакомпанії</th></tr>
+    {{#each users}}
+        <tr>
+            <td>{{this.Номер_авіакомпанії}}</td>
+            <td>{{this.Країна_розташування_офісу}}</td>
+            <td>{{this.Дата_заснування_авіакомпанії}}</td>
+            <td>{{this.Контактний_номер_телефону}}</td>
+            <td>{{this.Назва_авіакомпанії}}</td>
+        </tr>
+    {{/each}}
+</table>
+</body>
+<script>
+    function search_generate_url(type) {
+        let search_content = document.getElementsByName('content')[0].value
+        let search_content2 = document.getElementsByName('content2')[0].value
+        let url = '/' + type + '/' + search_content+ '/' + search_content2;
+        location.assign(url);
+    }
+</script>
+</html>

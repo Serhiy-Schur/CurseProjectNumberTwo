@@ -1,0 +1,123 @@
+table {
+    display: flex;
+    margin-top: 50px;
+    text-align: center;
+    font-family: Calibri, serif;
+}
+tbody {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    border: 3px solid #79bc02;
+    border-collapse: collapse;
+}
+th{
+    padding: 10px 10px;
+    font-size: 25px;
+    background-color: #79bc02;
+    color: white;
+}
+tr{
+    border: 3px solid #79bc02;
+    font-size: 20px;
+    border-radius: 10px;
+}
+td {
+    border: 3px solid #79bc02;
+    font-size: 20px;
+    border-radius: 10px;
+}
+input[type=text] {
+    text-align: center;
+    padding: 5px;
+    font-size: 20px;
+    border: 1px solid black;
+    border-radius: 6px;
+    width: 300px;
+}
+input[type=button] {
+    text-align: center;
+    padding: 6px;
+    font-size: 20px;
+    background-color: #79bd01;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+input[type=submit] {
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: #79bd01;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.search{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+.navbar {
+    height: 50px;
+    background-color: #eff1f9;
+    color: black;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+}
+.navbar__btn__back {
+    padding: 0;
+    font-size: 25px;
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+    color: black; background-color: #eef0f8;
+}
+h1 {
+    text-align: center;
+    color: black;
+    font-size: 50px;
+    font-family: Calibri, serif;
+}
+a {
+    color: white;
+    background-color: #79bd01;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 12px;
+    cursor: pointer;
+    width: 300px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 25px;
+    font-family: Calibri, serif;
+    font-weight: bold;
+    text-decoration: none;
+}
+label{
+    font-family: Calibri, serif;
+    font-size: 25px;
+    font-weight: bold;
+}
+.create{
+    text-align: center;
+    font-family: Calibri, serif;
+}
+.field{
+    text-align: center;
+    padding: 5px;
+    font-size: 20px;
+    border: 1px solid black;
+    border-radius: 6px;
+    width: 300px;
+}

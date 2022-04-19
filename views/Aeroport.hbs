@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Аеропорт</title>
+    <meta charset="utf-8" />
+    <link href="/style_zapyt.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="navbar">
+    <div><a class="navbar__btn__back" href="/Stuard">Назад</a></div>
+</div>
+<h1>Аеропорт</h1>
+<div class="search">
+    <input class="search_input" type="text" name="content" placeholder="Кількість смуг">
+    <input class="search_input" type="text" name="content2" placeholder="Номер аеропорту">
+    <input type="button" value="Знайти" onclick="search_generate_url('Aeroport')">
+</div>
+<table>
+    <tr><th>Номер аеропорту</th><th>Назва аеропорту</th><th>Країна розташування</th><th>Місто розташування</th><th>Кількість смуг</th></tr>
+    {{#each users}}
+        <tr>
+            <td>{{this.Номер_аеропорту}}</td>
+            <td>{{this.Назва_аеропорту}}</td>
+            <td>{{this.Країна_розташування}}</td>
+            <td>{{this.Місто_розташування}}</td>
+            <td>{{this.Кількість_смуг}}</td>
+        </tr>
+    {{/each}}
+</table>
+</body>
+<script>
+    function search_generate_url(type) {
+        let search_content = document.getElementsByName('content')[0].value
+        let search_content2 = document.getElementsByName('content2')[0].value
+        let url = '/' + type + '/' + search_content+ '/' + search_content2;
+        location.assign(url);
+    }
+</script>
+</html>
