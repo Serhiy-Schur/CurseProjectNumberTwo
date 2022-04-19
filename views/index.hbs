@@ -5,66 +5,51 @@
     <meta charset="utf-8" />
 </head>
 <body>
-    <div class="navbar"></div>
-    <img src="views/assets/plane.png">
+
     <h1>Аеропорт</h1>
     <div class="zapyt">
         <a href="/Stuard">Сторінка стюарда</a>
-        <a href="/create" style="background-color: grey; color: black">Додати новий запис</a>
-        <a href="/delete" style="background-color: grey; color: black">Видалити запис</a>
+        <a href="/create">Додати новий запис</a>
+        <a href="/delete">Видалити запис</a>
     </div>
 
 </body>
 <style>
-    img{
-        text-align: center;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 30%;
-        height: 30%;
-        padding-top: 20px;
-    }
     body{
         padding: 0;
         margin: 0;
+        background-color: darkblue;
     }
-    .navbar {
-        height: 50px;
-        background-color: #eff1f9;
-        color: black;
-        display: flex;
-        align-items: center;
-        padding: 0 15px;
-    }
+
     h1 {
         text-align: center;
-        color: black;
-        font-size: 60px;
-        font-family: Calibri, serif;
-        margin-bottom: 15px;
-        margin-top: 0;
+        color: yellow;
+        font-size: 80px;
+        font-family: "Times New Roman", serif;
+        margin-bottom: 250px;
+        margin-top: 30px;
     }
     .zapyt {
-        display: block;
+        display: flex;
         text-align: center;
-        width: 360px;
-        margin-left: auto;
-        margin-right: auto;
+
+        justify-content: space-between;
+        margin-left: 10%;
+        margin-right: 10%;
     }
     a {
-        color: white;
-        background-color: #79bd01;
+        color:darkblue;
+        background-color: yellow;
         padding: 10px 20px;
         text-align: center;
-        display: inline-block;
-        border-radius: 12px;
+        display: block;
+
         cursor: pointer;
         width: 300px;
         margin-top: 10px;
         margin-bottom: 10px;
         font-size: 25px;
-        font-family: Calibri, serif;
+        font-family: "Times New Roman", serif;
         font-weight: bold;
         text-decoration: none;
     }

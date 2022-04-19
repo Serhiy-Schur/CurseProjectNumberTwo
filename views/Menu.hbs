@@ -16,13 +16,12 @@
         <input type="button" value="Знайти" onclick="search_generate_url('Menu')">
 </div>
 <table>
-    <tr><th>Номер меню</th><th>Кількість напоїв</th><th>Кількість страв</th><th>Номер меню</th><th>Тип меню</th><th>Ціна</th></tr>
+    <tr><th>Номер меню</th><th>Кількість напоїв</th><th>Кількість страв</th><th>Тип меню</th><th>Ціна</th></tr>
     {{#each users}}
         <tr>
             <td>{{this.Номер_меню}}</td>
             <td>{{this.Кількість_напоїв}}</td>
             <td>{{this.Кількість_страв}}</td>
-            <td>{{this.Номер_меню}}</td>
             <td>{{this.Тип_меню}}</td>
             <td>{{this.Ціна}}</td>
         </tr>
